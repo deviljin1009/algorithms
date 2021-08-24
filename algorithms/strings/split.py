@@ -22,3 +22,9 @@ def split(string: str, separator: str = " ") -> list:
         elif index + 1 == len(string):
             split_words.append(string[last_index : index + 1])
     return split_words
+
+
+if __name__ == "__main__":
+    from doctest import testmod
+
+    testmod()
